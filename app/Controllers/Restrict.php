@@ -283,10 +283,8 @@ class Restrict extends BaseController
 				$email = \Config\Services::email();
 				$config['protocol'] = 'smtp';
 				$config['SMTPHost'] = 'smtp.gmail.com';
-				$config['SMTPUser'] = 'odontotime.suporte@gmail.com';
-				$config['SMTPPass'] = 'SisKzG9EdxNFadW';
-				//$config['SMTPPort'] = '465';
-				//$config['SMTPCrypto'] = 'ssl';
+				$config['SMTPUser'] = '';
+				$config['SMTPPass'] = '';
 				$config['SMTPPort'] = '587';
 				$config['SMTPCrypto'] = 'tls';
 				$config['mailType'] = 'html';
