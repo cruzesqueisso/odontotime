@@ -1,0 +1,45 @@
+.dropdown-item:hover, .dropdown-item:focus {
+	color: #fff;
+	text-decoration: none;
+	background-color: #4e73df;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+	color: rgba(0,0,0,.5)
+}
+
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child), .input-group > .input-group-append:not(:last-child) > .btn, .input-group > .input-group-append:not(:last-child) > .input-group-text, .input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text {
+	border: 1px solid #aaa;
+}
+
+.form-control {
+	border: 1px solid #aaa;
+}
+
+.form-control:focus {
+	border-color: #007bff;
+}
+
+#userDropdown {
+	background-color: white;
+} 
+
+#userDropdown span {
+	color: #3a3b45;
+}
+
+#userDropdown:focus, #userDropdown:hover {
+	background-color: #4e73df;
+}
+
+#userDropdown:focus span, #userDropdown:hover span {
+	color: #FFF;
+}
+
+th.dt-center, td.dt-center {
+	text-align: center;
+}
+
+.mono-font, td.dt-body-mono-font {
+	font-family: var(--font-family-monospace);
+}

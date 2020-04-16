@@ -18,6 +18,9 @@ use CodeIgniter\Controller;
 
 class BaseController extends Controller
 {
+	public function __construct(...$params)
+    {
+	}
 
 	/**
 	 * An array of helpers to be loaded automatically upon
@@ -41,6 +44,16 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		// $this->session = \Config\Services::session();
+		$this->session = \Config\Services::session();
 	}
 
+	protected function _userIsLogged()
+	{
+		if($this->session->has('user')
+		&& $this->session->user['loggedIn'] === TRUE)
+		{
+			return TRUE;
+		}
+		return FALSE;
+	}
 }
